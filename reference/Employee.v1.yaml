@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Employee
+  version: '1.0'
+  description: create employee by providing the details
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /v1/employee/create: {}
+components:
+  schemas:
+    Employee:
+      title: Employee
+      type: object
+      description: Employee Pojo
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        address:
+          type: string
+      x-examples:
+        example-1: {}
+  securitySchemes: {}
